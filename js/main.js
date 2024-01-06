@@ -70,3 +70,7 @@ getS("#form_id").oninput = (e) => {
         getS('#submit_btn').disabled = true;
     }
 }
+
+function toUp() {
+    console.log('up');
+}
