@@ -1,0 +1,124 @@
+@import "./base/base";
+@import "./base/variables";
+@import "./base/mixins";
+@import "../TEST/styles/test";
+@import "../styles/devices/mobile";
+@import "../styles/devices/tablet";
+@import "../styles/devices/desktop";
+@import "../styles/devices/l_desktop";
+
+body {
+  background-image: url("../images/bg-image.png");
+  position: relative;
+  p::selection,
+  span::selection,
+  h2::selection,
+  h3::selection,
+  img::selection,
+  button::selection,
+  legend::selection {
+    background-color: transparent;
+  }
+  // HEADER START
+  header {
+    width: 100%;
+    background-color: $bg-black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    .site-logo-box {
+      .site-title {
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: $c-white;
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  // HEADER END
+
+  .main-container {
+    margin: 0 auto;
+    padding-top: 60px;
+    // MAIN START
+    main {
+      background-color: $bg-white;
+      min-height: 500px;
+      box-shadow: 0 0 10px black;
+      padding: 20px;
+      .item {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 0 4px black;
+        overflow: hidden;
+      }
+    }
+    // MAIN END
+
+    // FOOTER START
+    footer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      align-items: center;
+      background-color: $bg-white;
+      color: $c-black;
+      padding: 20px 0;
+      .footer-text {
+        padding-bottom: 20px;
+        p {
+          padding-bottom: 20px;
+          a {
+            color: $c-black;
+          }
+        }
+        p:nth-of-type(2) {
+          line-height: 20px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      .footer-menu-container {
+        width: 600px;
+        .footer-menu {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;
+          .footer-menu-item {
+            a {
+              font-size: 12px;
+              color: $c-black;
+            }
+          }
+        }
+      }
+    }
+    // FOOTER END
+  }
+
+  .empty {
+    background-color: transparent !important;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .up {
+    text-transform: uppercase;
+  }
+  .version {
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

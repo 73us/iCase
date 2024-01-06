@@ -1,0 +1,659 @@
+// DESKTOP START
+@media screen and (max-width: 1430px) and (min-width: 1021px) {
+  main {
+    // padding: 15px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    .item {
+      border: 1px solid #000;
+      height: 420px;
+      width: 250px;
+      margin-bottom: 15px;
+    }
+    .item:nth-last-child(-n + 3) {
+      margin-bottom: 0 !important;
+    }
+  }
+  .main-container {
+    width: 800px;
+    main {
+      // ITEM CARD START
+      .item {
+        width: 32%;
+        height: 320px;
+        a {
+          display: block;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+          .item-image {
+            margin: 0 auto -2px;
+            position: relative;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+          .pricing {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            width: 75%;
+            height: 60px;
+            .regular-price {
+              .price {
+                font-size: 20px;
+                span {
+                  color: $c-black;
+                  text-decoration: line-through;
+                }
+              }
+            }
+            .discounted-price {
+              .price {
+                font-size: 20px;
+                span {
+                  color: $c-red;
+                }
+              }
+            }
+          }
+        }
+      }
+      // ITEM CARD END
+
+      // item title START
+      .item-title-box {
+        width: 100%;
+        background-color: $bg-gray;
+        height: 70px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        .secondary-title {
+          font-size: 20px;
+        }
+        .main-title {
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $c-white;
+          font-size: 25px;
+        }
+      }
+      // item title END
+
+      // greeting section START
+      .greeting-section {
+        width: 100%;
+        &-image {
+          margin: 0 auto -2px;
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+          .badge {
+            color: $c-white;
+            padding: 10px 50px;
+            position: absolute;
+            background-color: $bg-red;
+            top: 30px;
+            right: -40px;
+            transform: rotate(45deg);
+            z-index: 10;
+          }
+        }
+
+        .pricing {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          height: 60px;
+          .regular-price {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding-top: 10px;
+            width: 50%;
+            height: 100%;
+            background-color: $bg-white;
+            color: $c-black;
+            p {
+              font-size: 14px;
+            }
+            .price {
+              font-size: 20px;
+              span {
+                font-size: 25px;
+                text-decoration: line-through;
+              }
+            }
+          }
+
+          .discounted-price {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding-top: 10px;
+            width: 50%;
+            height: 100%;
+            background: #f12711;
+            background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+            background: linear-gradient(to bottom, #f5af19, #f12711);
+            color: $c-white;
+            p {
+              font-size: 14px;
+            }
+            .price {
+              font-size: 20px;
+              span {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+
+        .btn-box {
+          background-color: $bg-gray;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          button {
+            margin: 10px 0;
+            padding: 0 20px;
+            font-size: 35px;
+            font-weight: bold;
+            background-color: $btn-yellow;
+            border: none;
+            border-radius: 10px;
+            height: 90px;
+          }
+          button:hover {
+            cursor: pointer;
+            background-color: $btn-yellow-hover;
+          }
+        }
+      }
+      // greeting section END
+
+      // timer section START
+      .timer-section {
+        background-color: $bg-white;
+        .section-title {
+          font-size: 30px;
+          text-align: center;
+          margin: 15px 0;
+        }
+        .pricing-info-box {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          align-items: center;
+          height: 120px;
+          padding-bottom: 25px;
+          p {
+            font-size: 22px;
+          }
+        }
+        .discount-timer-box {
+          padding: 20px;
+          background-color: $bg-gray;
+          color: $c-white;
+          h3 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+          }
+          .timer-box {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto 20px;
+            width: 40%;
+            .hours-box,
+            .minutes-box,
+            .seconds-box {
+              background-color: $btn-gray-hover;
+              display: flex;
+              flex-flow: column wrap;
+              justify-content: center;
+              align-items: center;
+              width: 80px;
+              height: 90px;
+              p {
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+              }
+              span {
+                text-align: center;
+              }
+            }
+          }
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      // timer section END
+
+      // description section START
+      .description-section {
+        background-color: $bg-white;
+        padding: 20px;
+        width: 100%;
+        .section-title {
+          font-size: 30px;
+          text-align: left;
+          margin: 0 0 20px;
+        }
+        .title-lines {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          width: 20%;
+          hr {
+            margin: 0 0 10px;
+            border: 2px solid #000;
+          }
+          hr:nth-child(1) {
+            width: 25px;
+          }
+          hr:nth-child(2) {
+            width: 100px;
+          }
+        }
+        .description-section-part {
+          img {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+          p {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      // description section END
+
+      // advantages section START
+      .advantages-section {
+        background-color: $bg-white;
+        padding: 20px;
+        width: 100%;
+        .section-title {
+          font-size: 30px;
+          text-align: left;
+          margin: 0 0 20px;
+        }
+        .title-lines {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          width: 20%;
+          hr {
+            margin: 0 0 10px;
+            border: 2px solid #000;
+          }
+          hr:nth-child(1) {
+            width: 25px;
+          }
+          hr:nth-child(2) {
+            width: 100px;
+          }
+        }
+        .advantages-section-part {
+          width: 100%;
+          height: 280px;
+          display: flex;
+          background-color: $btn-bluegray;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.212);
+          img {
+            width: 45%;
+          }
+          p {
+            padding: 30px 20px;
+            width: 55%;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+        .advantages-section-part:nth-child(odd) {
+          flex-flow: row nowrap;
+        }
+        .advantages-section-part:nth-child(even) {
+          flex-flow: row-reverse nowrap;
+        }
+      }
+      // advantages section END
+
+      // characteristics section START
+      .characteristics-section {
+        background-color: $bg-white;
+        width: 100%;
+        .section-title {
+          font-size: 30px;
+          text-align: left;
+          margin: 20px;
+        }
+        .title-lines {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          width: 20%;
+          margin: 20px 20px 10px;
+          hr {
+            margin: 0 0 10px;
+            border: 2px solid #000;
+          }
+          hr:nth-child(1) {
+            width: 25px;
+          }
+          hr:nth-child(2) {
+            width: 100px;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        .characteristics-list {
+          .characteristics-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0;
+            min-height: 50px;
+            padding: 5px 30px;
+            span:nth-child(1) {
+              width: 40%;
+              text-align-last: left;
+            }
+            span:nth-child(2) {
+              width: 60%;
+              text-align: right;
+            }
+          }
+          .characteristics-item:nth-child(odd) {
+            background-color: $btn-bluegray;
+          }
+          .characteristics-item:nth-child(even) {
+          }
+        }
+        .btn-box {
+          background-color: $bg-white;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          button {
+            margin: 10px 0;
+            padding: 0 20px;
+            font-size: 35px;
+            font-weight: bold;
+            background-color: $btn-yellow;
+            border: none;
+            border-radius: 10px;
+            height: 90px;
+          }
+          button:hover {
+            cursor: pointer;
+            background-color: $btn-yellow-hover;
+          }
+        }
+      }
+      // characteristics section END
+
+      // ordering guide section START
+      .ordering-guide-section {
+        background-color: $bg-white;
+        padding: 20px;
+        width: 100%;
+        .section-title {
+          font-size: 30px;
+          text-align: left;
+          margin: 0 0 20px;
+        }
+        .title-lines {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          width: 20%;
+          margin: 20px 0 10px;
+          hr {
+            margin: 0 0 10px;
+            border: 2px solid #000;
+          }
+          hr:nth-child(1) {
+            width: 25px;
+          }
+          hr:nth-child(2) {
+            width: 100px;
+          }
+        }
+        .ordering-guide-section-part {
+          background-color: $btn-bluegray;
+          display: flex;
+          position: relative;
+          min-height: 100px;
+          &-half:nth-child(1) {
+            width: 50%;
+            img {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          &-half:nth-child(2) {
+            width: 50%;
+            padding: 15px;
+            h3 {
+              margin-bottom: 10px;
+            }
+          }
+          .icon-box {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            img {
+              background-color: $btn-bluegray;
+              box-shadow: 0 0 5px black;
+              border-radius: 50%;
+              padding: 10px;
+              height: 90px;
+              width: 90px;
+            }
+          }
+        }
+        .ordering-guide-section-part:nth-child(odd) {
+          flex-flow: row nowrap;
+          .ordering-guide-section-part-half:nth-child(2) {
+            padding-left: 40px;
+          }
+        }
+        .ordering-guide-section-part:nth-child(even) {
+          flex-flow: row-reverse nowrap;
+        }
+      }
+      // ordering guide section END
+
+      // order form section START
+      .order-form-section {
+        width: 100%;
+        &-image {
+          margin: 0 auto -2px;
+          position: relative;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+          .badge {
+            color: $c-white;
+            padding: 10px 50px;
+            position: absolute;
+            background-color: $bg-red;
+            top: 30px;
+            right: -40px;
+            transform: rotate(45deg);
+            z-index: 10;
+          }
+        }
+
+        .pricing {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          height: 60px;
+          .regular-price {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding-top: 10px;
+            width: 50%;
+            height: 100%;
+            background-color: $bg-white;
+            color: $c-black;
+            p {
+              font-size: 14px;
+            }
+            .price {
+              font-size: 20px;
+              span {
+                font-size: 25px;
+                text-decoration: line-through;
+              }
+            }
+          }
+
+          .discounted-price {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding-top: 10px;
+            width: 50%;
+            height: 100%;
+            background: #f12711;
+            background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+            background: linear-gradient(to bottom, #f5af19, #f12711);
+            color: $c-white;
+            p {
+              font-size: 14px;
+            }
+            .price {
+              font-size: 20px;
+              span {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+
+        form {
+          font-size: 20px;
+          background-color: $bg-gray;
+          padding: 40px 20px;
+          fieldset {
+            margin-bottom: 10px;
+            select,
+            label > input[type="text"],
+            label > input[type="tel"] {
+              height: 60px;
+              width: 100%;
+              font-size: 20px;
+              border-radius: 10px;
+              border: none;
+              padding: 5px 10px;
+            }
+            select:hover {
+              cursor: pointer;
+            }
+            legend {
+              color: $c-white;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+            label {
+              color: $c-white;
+              display: flex;
+              flex-flow: row;
+              justify-content: start;
+              align-items: center;
+              input[type="radio"] {
+                height: 25px;
+                width: 25px;
+                margin-right: 15px;
+              }
+              input[type="text"],
+              input[type="tel"] {
+                padding: 5px 20px;
+              }
+              input::placeholder {
+                font-size: 20px;
+              }
+            }
+          }
+          fieldset:nth-child(2) {
+            display: flex;
+          }
+          .btn-box {
+            background-color: $bg-gray;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+            button {
+              width: 100%;
+              margin: 10px 0;
+              padding: 0 20px;
+              font-size: 35px;
+              font-weight: bold;
+              background-color: $btn-yellow;
+              border: none;
+              border-radius: 10px;
+              height: 90px;
+            }
+            button:hover {
+              cursor: pointer;
+              background-color: $btn-yellow-hover;
+            }
+            button:disabled {
+              cursor: default;
+              background-color: $btn-yellow-hover;
+            }
+          }
+        }
+      }
+      // order form section END
+
+      // delivery section START
+      .delivery-section {
+        margin: 0 auto -2px;
+        img {
+          width: 100%;
+        }
+      }
+      // delivery section END
+    }
+    footer {
+      background-color: rgb(192, 192, 98) !important;
+    }
+  }
+}
+// DESKTOP END

@@ -1,0 +1,7 @@
+@mixin btnSizes($w, $h, $bg, $bdrd, $clr) {
+  width: $w;
+  height: $h;
+  background-color: $bg;
+  border-radius: $bdrd;
+  color: $clr;
+}
