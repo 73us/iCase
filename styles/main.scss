@@ -3,6 +3,7 @@
 @import "./base/mixins";
 @import "../TEST/styles/test";
 @import "../styles/devices/mobile";
+@import "../styles/devices/l_mobile";
 @import "../styles/devices/tablet";
 @import "../styles/devices/desktop";
 @import "../styles/devices/l_desktop";
@@ -120,5 +121,26 @@ body {
     height: 15px;
     font-size: 12px;
     font-weight: bold;
+  }
+  .to-up-box {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .to-up-box:hover {
+    cursor: pointer;
   }
 }
