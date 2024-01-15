@@ -3346,6 +3346,7 @@ body .main-container main .item {
   overflow: hidden;
 }
 body .main-container footer {
+  box-shadow: 10px 0 10px -10px black, -10px 0 10px -10px black;
   position: relative;
   display: flex;
   justify-content: center;
