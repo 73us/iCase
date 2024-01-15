@@ -764,7 +764,6 @@ table {
     width: 100%;
   }
   .main-container footer {
-    background-color: rgb(100, 209, 100) !important;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
@@ -1418,7 +1417,6 @@ table {
     width: 100%;
   }
   .main-container footer {
-    background-color: rgb(100, 209, 100) !important;
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
@@ -2071,9 +2069,6 @@ table {
   .main-container main .delivery-section img {
     width: 100%;
   }
-  .main-container footer {
-    background-color: rgb(74, 74, 212) !important;
-  }
 }
 @media screen and (max-width: 1430px) and (min-width: 1021px) {
   main {
@@ -2685,9 +2680,6 @@ table {
   }
   .main-container main .delivery-section img {
     width: 100%;
-  }
-  .main-container footer {
-    background-color: rgb(192, 192, 98) !important;
   }
 }
 @media screen and (min-width: 1430px) {
@@ -3301,9 +3293,6 @@ table {
   .main-container main .delivery-section img {
     width: 100%;
   }
-  .main-container footer {
-    background-color: rgb(187, 109, 109) !important;
-  }
 }
 body {
   background-image: url("../images/bg-image.png");
@@ -3420,7 +3409,6 @@ body .to-up-box {
   bottom: 10px;
   right: 10px;
   border-radius: 50%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
